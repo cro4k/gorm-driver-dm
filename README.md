@@ -5,14 +5,17 @@
 ## Quick Start
 
 ```go
+package main
+
 import (
-  "github.com/nfjBill/gorm-driver-dm"
-  "gorm.io/gorm"
+    "github.com/cro4k/gorm-driver-dm"
+    "gorm.io/gorm"
 )
 
-// https://github.com/nfjBill/gorm-driver-dm
-dsn := "dm://SYSDBA:SYSDBA@127.0.0.1:5236?autoCommit=true"
-db, err := gorm.Open(dm.Open(dsn), &gorm.Config{})
+func main() {
+    dsn := "dm://SYSDBA:SYSDBA@127.0.0.1:5236?autoCommit=true"
+    db, err := gorm.Open(dm.Open(dsn), &gorm.Config{})
+}
 ```
 
 达梦数据库用户名即模式名

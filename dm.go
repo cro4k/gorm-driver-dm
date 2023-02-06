@@ -3,13 +3,8 @@ package dm
 import (
 	"database/sql"
 	"fmt"
-	"github.com/nfjBill/gorm-driver-dm/clauses"
-	"gorm.io/gorm/utils"
-	"regexp"
-	"strconv"
-	"strings"
-
-	_ "github.com/nfjBill/gorm-driver-dm/dmr"
+	_ "github.com/cro4k/dmdb"
+	"github.com/cro4k/gorm-driver-dm/clauses"
 	"github.com/thoas/go-funk"
 	"gorm.io/gorm"
 	"gorm.io/gorm/callbacks"
@@ -17,6 +12,10 @@ import (
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/migrator"
 	"gorm.io/gorm/schema"
+	"gorm.io/gorm/utils"
+	"regexp"
+	"strconv"
+	"strings"
 )
 
 type Config struct {
